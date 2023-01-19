@@ -3,10 +3,14 @@
   <PropertyGroup>
     <BaseIntermediateOutputPath>obj\net5\</BaseIntermediateOutputPath>
     <EnableDefaultItems>false</EnableDefaultItems>
+    <EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
+    <EnableDefaultPageItems>false</EnableDefaultPageItems>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <GenerateRuntimeConfigDevFile>true</GenerateRuntimeConfigDevFile>
   </PropertyGroup>
-  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+  <Import Project="Sdk.props" Sdk="Upf.Sdk" Version="9999.0.0-localbuild" />
   <PropertyGroup>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Xceed.Wpf.Toolkit.LiveExplorer</RootNamespace>
     <AssemblyName>Xceed.Wpf.Toolkit.LiveExplorer.NET5</AssemblyName>
@@ -1396,13 +1400,13 @@
     </Reference>
     <Reference Include="..\..\Libs\Xceed.Wpf.Samples.SampleData.dll" />
   </ItemGroup>
-  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+  <Import Project="Sdk.targets" Sdk="Upf.Sdk" Version="9999.0.0-localbuild" />
   <PropertyGroup>
     <!-- .NET Core projects use a custom AssemblySearchPaths value that doesn't
          include the ReferencePath property. No good reason why. We reactivate its use here
     -->
     <AssemblySearchPaths>$(ReferencePath);$(AssemblySearchPaths)</AssemblySearchPaths>
-    <PreBuildEvent>echo Deleting old CodeFiles directory...
+    <!--<PreBuildEvent>echo Deleting old CodeFiles directory...
 @if exist "$(ProjectDir)CodeFiles" rmdir /s /q "$(ProjectDir)CodeFiles"
 echo Copying sample code files...
 for /d /r "$(ProjectDir)Samples" %25%25a in (Views) do @if exist "%25%25a" xcopy "%25%25a" "$(ProjectDir)CodeFiles" /s /Y /I /q &gt; NUL
@@ -1410,6 +1414,6 @@ echo Renaming sample code files...
 for /f "tokens=*" %25%25f in ('dir "$(ProjectDir)CodeFiles\*.*" /b') do ( 
 move /y "$(ProjectDir)CodeFiles\%25%25f" "$(ProjectDir)CodeFiles\%25%25f.txt" &gt; NUL
 )
-</PreBuildEvent>
+</PreBuildEvent>-->
   </PropertyGroup>
 </Project>
