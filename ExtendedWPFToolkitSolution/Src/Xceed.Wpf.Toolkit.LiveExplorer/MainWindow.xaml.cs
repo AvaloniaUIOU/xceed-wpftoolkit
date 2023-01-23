@@ -19,6 +19,7 @@ using System.Diagnostics;
 using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Documents;
 using System.Windows.Input;
 using Xceed.Wpf.Toolkit.LiveExplorer.Core;
 
@@ -136,6 +137,7 @@ namespace Xceed.Wpf.Toolkit.LiveExplorer
 
     #region Methods
 
+    private FlowDocument _flowDocumentDesc;
     private void InitView()
     {
       if( ( _flowDocumentDesc != null ) && ( this.View != null ) )

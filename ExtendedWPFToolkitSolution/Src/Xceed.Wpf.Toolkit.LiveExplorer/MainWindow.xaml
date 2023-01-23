@@ -818,13 +818,13 @@
                                 BorderBrush="Transparent"
                                 BorderThickness="0"
                                 Focusable="False">
-                    <RichTextBox BorderThickness="0"
+                    <!--<RichTextBox BorderThickness="0"
                                  IsReadOnly="True"
                                  IsHitTestVisible="True"
                                  IsDocumentEnabled="True"
                                  Focusable="False">
                       <FlowDocument x:Name="_flowDocumentDesc" />
-                    </RichTextBox>
+                    </RichTextBox>-->
                   </ScrollViewer>
 
                   <!-- Bottom Rectangle -->

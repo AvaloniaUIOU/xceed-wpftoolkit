@@ -267,7 +267,7 @@
                         </xcad:LayoutAnchorable>
                         <xcad:LayoutAnchorable ContentId="journal"
                                                Title="Journal">
-                           <RichTextBox>
+                           <!--<RichTextBox>
                               <FlowDocument>
                                  <Paragraph FontSize="14"
                                             FontFamily="Segoe">
@@ -277,7 +277,7 @@
                                     <Bold>RichTextBox</Bold> has been added here
                                  </Paragraph>
                               </FlowDocument>
-                           </RichTextBox>
+                           </RichTextBox>-->
                         </xcad:LayoutAnchorable>
                      </xcad:LayoutAnchorablePane>
                   </xcad:LayoutAnchorablePaneGroup>

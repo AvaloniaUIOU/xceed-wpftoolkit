@@ -58,7 +58,7 @@
 
       <StackPanel>
          <TextBlock Text="Usage:" Style="{StaticResource Header}"/>
-         <RichTextBox IsReadOnly="True" BorderThickness="0">
+         <!--<RichTextBox IsReadOnly="True" BorderThickness="0">
             <FlowDocument>
                <Paragraph>
                   <Bold>AutoSelectBehavior:</Bold>
@@ -75,7 +75,7 @@
                In the following "Telephone Number" fields, the "MaxLength" properties of the controls have been set to 3, 3, and 4.
                </Paragraph>
             </FlowDocument>
-         </RichTextBox>
+         </RichTextBox>-->
 
          <!-- PHONE NUMBER FIELDS -->         
          <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
@@ -86,6 +86,7 @@
             <TextBlock Text="-" VerticalAlignment="Center"/>
             <xctk:AutoSelectTextBox MaxLength="4" Width="40" Text="5555"/>
          </StackPanel>
+         <!--
          <RichTextBox IsReadOnly="True" BorderThickness="0">
             <FlowDocument>
                <Paragraph>
@@ -96,7 +97,7 @@
                You are no longer limited to the "left-right" navigation of the "Tab, Shift-Tab" keys.
                </Paragraph>
             </FlowDocument>
-         </RichTextBox>
+         </RichTextBox>-->
 
          <!-- TEXTBOX MATRIX -->
          <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
